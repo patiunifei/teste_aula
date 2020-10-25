@@ -5,7 +5,7 @@ rospy.init_node('test1')
 
 def timerCallBack(event):
     msg = String()
-    msg.data = 'test'
+    msg.data = 'test2'
     pub.publish(msg)
     
 
