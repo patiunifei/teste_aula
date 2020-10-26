@@ -8,7 +8,7 @@ def timerCallBack(event):
     msg.linear.x = 1.0
     pub.publish(msg)
     
-
+#teste
 pub = rospy.Publisher('/cmd_vel', Twist, queue_size=1)
 timer = rospy.Timer(rospy.Duration(0.05), timerCallBack)
 
