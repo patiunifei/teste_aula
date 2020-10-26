@@ -5,7 +5,7 @@ rospy.init_node('cmd_node')
 
 def timerCallBack(event):
     msg = Twist()
-    msg.data = 'test4'
+    msg.linear.x = 1.0
     pub.publish(msg)
     
 
